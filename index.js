@@ -1,11 +1,11 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const connectDB = require("./config/db");
-const { swaggerUi, specs } = require("./config/swagger");
+const connectDB = require("./src/config/db");
+const { swaggerUi, specs } = require("./src/config/swagger");
 
 // Import routes
-const userRoutes = require("./routes/userRoutes");
+const userRoutes = require("./src/routes/userRoutes");
 
 dotenv.config();
 connectDB();
